@@ -12,9 +12,6 @@ export default function ConsultorioMarques() {
     setMenuOpen(false);
   };
 
-  const [ref1, isVisible1] = useScrollAnimation();
-  const [ref2, isVisible2] = useScrollAnimation();
-
   const whatsappLink = "https://wa.me/5511970768886?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta";
 
   return (
