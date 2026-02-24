@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Leaf, Heart, Target, Ruler, Dna, Flower } from "lucide-react";
+import { Leaf, Heart, Target, Ruler, Dna, Flower, MessageCircle, MapPin, Phone, Mail, Instagram } from "lucide-react";
 import { WHATSAPP_LINK } from "../lib/whatsapp";
 import Seo from "../components/Seo";
 
