@@ -54,13 +54,21 @@ export default function Sobre() {
             </a>
           </div>
 
-          {/* Espaço para imagem */}
-          <div className="bg-amber-100 rounded-2xl min-h-[420px] flex items-center justify-center text-gray-600 p-8 border border-amber-200">
-            <div className="text-center">
-              <p className="font-semibold">Espaço para imagem</p>
-              <p className="text-sm mt-2">Foto da médica / consultório / atendimento</p>
-            </div>
-          </div>
+<div className="rounded-2xl overflow-hidden border border-amber-200 bg-amber-100">
+  <picture className="block w-full">
+    <source srcSet={`${import.meta.env.BASE_URL}foto_consultorio5.jpeg`} type="image/jpeg" />
+    <img
+      src={`${import.meta.env.BASE_URL}foto_consultorio5.jpeg`}
+      alt="foto_consultorio5"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      width="1200"
+      height="900"
+      className="block w-full h-[280px] sm:h-[420px] lg:h-[520px] object-cover"
+    />
+  </picture>
+</div>
         </div>
 
         {/* Bloco extra opcional */}

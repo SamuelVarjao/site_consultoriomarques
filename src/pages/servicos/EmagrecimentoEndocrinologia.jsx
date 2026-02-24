@@ -62,21 +62,21 @@ export default function EmagrecimentoEndocrinologia() {
             </div>
           </div>
 
-          <div className="bg-amber-100 rounded-2xl min-h-[420px] flex items-center justify-center text-gray-600 p-8 border border-amber-200">
-              <picture>
-                <source srcSet={`${import.meta.env.BASE_URL}metabolismo.jpg`} type="image/jpeg" />
-                <img
-                  src={`${import.meta.env.BASE_URL}metabolismo.jpg`}
-                  alt="metabolismo"
-                  loading="eager"
-                  fetchpriority="high"
-                  decoding="async"
-                  width="600"
-                  height="600"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </picture>
-          </div>
+<div className="rounded-2xl overflow-hidden border border-amber-200 bg-amber-100">
+  <picture className="block w-full">
+    <source srcSet={`${import.meta.env.BASE_URL}metabolismo.jpg`} type="image/jpeg" />
+    <img
+      src={`${import.meta.env.BASE_URL}metabolismo.jpg`}
+      alt="metabolismo"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      width="1200"
+      height="900"
+      className="block w-full h-[280px] sm:h-[420px] lg:h-[520px] object-cover"
+    />
+  </picture>
+</div>
         </div>
       </div>
     </section>

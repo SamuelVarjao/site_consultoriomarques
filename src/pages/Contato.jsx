@@ -59,10 +59,10 @@ export default function Contato() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-1">Email</h4>
                 <a
-                  href="mailto:consultoriomedicomarques@gmail.com"
+                  href="mailto:marquesconsultoriomedico@gmail.com"
                   className="text-base text-amber-600 hover:text-amber-700 font-medium transition-colors"
                 >
-                  consultoriomedicomarques@gmail.com
+                  marquesconsultoriomedico@gmail.com
                 </a>
               </div>
             </div>
@@ -96,19 +96,30 @@ export default function Contato() {
               </div>
             </div>
           </div>
+<div className="rounded-2xl overflow-hidden shadow-lg border border-amber-200 bg-white">
+  <div className="w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-auto lg:h-96">
+    <iframe
+      className="w-full h-full"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0874662451756!2d-46.6661!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7c7f7f7f7f7%3A0x0!2sAv.%20Marechal%20Tito%2C%20677!5e0!3m2!1spt-BR!2sbr!4v1707600000000"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="eager"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Mapa"
+    />
+  </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-lg h-80 sm:h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0874662451756!2d-46.6661!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7c7f7f7f7f7%3A0x0!2sAv.%20Marechal%20Tito%2C%20677!5e0!3m2!1spt-BR!2sbr!4v1707600000000"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa"
-            />
-          </div>
+  <div className="p-4 bg-amber-50 border-t border-amber-100">
+    <a
+      href="https://www.google.com/maps?q=Av.%20Marechal%20Tito,%20677%20-%20Sala%208,%20S%C3%A3o%20Paulo%20SP"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-amber-700 font-semibold hover:text-amber-800 transition-colors"
+    >
+      Abrir no Google Maps →
+    </a>
+  </div>
+</div>
         </div>
       </div>
     </section>
