@@ -31,7 +31,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex flex-col gap-6 sm:gap-7">
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight text-gray-900">
-                Saúde Integrativa com Humanidade
+                Emagreça com acompanhamento!
               </h1>
 
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
