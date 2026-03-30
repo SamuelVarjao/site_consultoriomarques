@@ -85,7 +85,7 @@ function PillarCard({ icon, title, description }) {
 
 const CAROUSEL_SLIDES = [
   {
-    photo: "foto_dra_simara.jpg",
+    photo: "foto_simara.jpg",
     alt: "Dra. Simara Marques",
     name: "Dra. Simara Marques",
     specialty: "Médica · CRM 247.230 SP",
@@ -314,7 +314,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <TeamCard
-              photo={`${import.meta.env.BASE_URL}foto_dra_simara2.jpg`}
+              photo={`${import.meta.env.BASE_URL}foto_simara.jpg`}
               alt="Dra. Simara Marques"
               name="Dra. Simara Marques"
               specialty="Médica"
