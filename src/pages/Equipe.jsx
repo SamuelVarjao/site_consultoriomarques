@@ -2,7 +2,7 @@ import React from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import BackButton from "../components/BackButton";
 import Seo from "../components/Seo";
-import { WHATSAPP_LINK } from "../lib/whatsapp";
+import { WHATSAPP_LINK, WA_SIMARA, WA_PHILIPI, WA_JESSICA } from "../lib/whatsapp";
 import { Award, Stethoscope, Apple, CheckCircle } from "lucide-react";
 
 const professionals = [
@@ -12,9 +12,10 @@ const professionals = [
     name: "Dra. Simara Marques",
     specialty: "Médica",
     registration: "Médico · CRM 247.230 SP",
+    waLink: WA_SIMARA,
     icon: <Stethoscope size={20} className="text-amber-500" strokeWidth={1.5} />,
     bio: [
-      "Especialista em endocrinologia e metabolismo, a Dra. Simara construiu sua trajetória com um olhar atento à individualidade de cada paciente. Ao longo dos anos, sua prática clínica ganhou um foco cada vez mais integrativo: entender sintomas, hábitos, histórico, emoções e rotina para propor um plano de cuidado coerente e sustentável.",
+      "Especializada em endocrinologia e metabolismo, a Dra. Simara construiu sua trajetória com um olhar atento à individualidade de cada paciente. Ao longo dos anos, sua prática clínica ganhou um foco cada vez mais integrativo: entender sintomas, hábitos, histórico, emoções e rotina para propor um plano de cuidado coerente e sustentável.",
       "Seu atendimento combina ciência, acompanhamento próximo e metas realistas. Em vez de soluções rápidas, o objetivo é construir saúde de verdade.",
     ],
     areas: [
@@ -31,9 +32,10 @@ const professionals = [
     name: "Dr. Philipi Marques",
     specialty: "Médico",
     registration: "CRM 223.765 · SP",
+    waLink: WA_PHILIPI,
     icon: <Stethoscope size={20} className="text-amber-500" strokeWidth={1.5} />,
     bio: [
-      "O Dr. Philipi Marques atua com uma abordagem clínica integrativa e preventiva, priorizando o diagnóstico preciso e o acompanhamento longitudinal do paciente. Sua formação sólida em clínica médica permite identificar e tratar condições de forma ampla, com atenção ao contexto de vida de cada pessoa.",
+      "O Dr. Philipi Marques atua com uma abordagem clínica integrativa e preventiva, priorizando o diagnóstico preciso e o acompanhamento longitudinal do paciente. Sua formação sólida em permite identificar e tratar condições de forma ampla, com atenção ao contexto de vida de cada pessoa.",
       "Comprometido com a qualidade do atendimento, oferece consultas objetivas e humanizadas, construindo uma relação de confiança com seus pacientes.",
     ],
     areas: [
@@ -49,6 +51,7 @@ const professionals = [
     name: "Dra. Jéssica Moura",
     specialty: "Nutricionista",
     registration: "CRN 51674",
+    waLink: WA_JESSICA,
     icon: <Apple size={20} className="text-amber-500" strokeWidth={1.5} />,
     bio: [
       "A Dra. Jéssica Moura é nutricionista clínica com foco em reeducação alimentar, emagrecimento saudável e saúde metabólica. Sua abordagem parte da escuta ativa e da personalização — cada plano alimentar é construído com base no histórico, preferências e objetivos únicos de cada paciente.",
@@ -117,7 +120,7 @@ function ProfessionalCard({ pro, reverse }) {
         </div>
 
         <a
-          href={WHATSAPP_LINK}
+          href={pro.waLink}
           target="_blank"
           rel="noopener noreferrer"
           className="w-fit px-8 py-3.5 bg-amber-500 text-white font-semibold rounded-xl hover:bg-amber-600 transition-all transform hover:-translate-y-0.5 shadow-lg shadow-amber-200/50 text-sm"
@@ -180,7 +183,7 @@ export default function Equipe() {
             Entre em contato e escolha o profissional mais adequado para o seu cuidado.
           </p>
           <a
-            href={WHATSAPP_LINK}
+            href={pro.waLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex px-10 py-4 bg-white text-amber-600 font-bold rounded-xl hover:bg-amber-50 transition-all transform hover:-translate-y-1 shadow-xl text-base sm:text-lg"

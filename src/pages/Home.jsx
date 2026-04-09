@@ -5,7 +5,7 @@ import {
   MessageCircle, MapPin, Phone, Mail, Instagram,
   Apple, ChevronRight, Award, Star, Users, CheckCircle,
 } from "lucide-react";
-import { WHATSAPP_LINK } from "../lib/whatsapp";
+import { WHATSAPP_LINK, WA_SIMARA, WA_PHILIPI, WA_JESSICA } from "../lib/whatsapp";
 import Seo from "../components/Seo";
 
 function ServiceCard({ icon, title, description, to }) {
@@ -38,7 +38,7 @@ function StatCard({ number, label }) {
   );
 }
 
-function TeamCard({ name, specialty, registration, description, photo, alt }) {
+function TeamCard({ name, specialty, registration, description, photo, alt, waLink }) {
   const firstName = name.split(" ")[1] ?? name.split(" ")[0];
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
@@ -57,7 +57,7 @@ function TeamCard({ name, specialty, registration, description, photo, alt }) {
         <p className="text-gray-400 text-xs mb-4 font-mono">{registration}</p>
         <p className="text-sm text-gray-600 leading-relaxed mb-5">{description}</p>
         <a
-          href={WHATSAPP_LINK}
+          href={waLink}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full flex justify-center px-4 py-2.5 bg-amber-500 text-white text-sm font-semibold rounded-xl hover:bg-amber-600 transition-all"
@@ -144,25 +144,25 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-amber-200 rounded-full px-4 py-2 w-fit shadow-sm">
                 <Star size={13} className="text-amber-500 fill-amber-500" />
                 <span className="text-xs sm:text-sm font-semibold text-amber-700 tracking-wide">
-                  Saúde &amp; Emagrecimento
+                  Emagrecimento com acompanhamento médico
                 </span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight text-gray-900">
-                Sua saúde, nossa{" "}
-                <span className="text-amber-500">prioridade</span>
+                Emagreça com saúde,{" "}
+                <span className="text-amber-500">de forma duradoura</span>
               </h1>
 
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg">
-                Medicina e nutrição integradas, com atendimento humanizado e personalizado.
-                Uma equipe completa dedicada ao seu bem-estar e beleza.
+                Tratamento médico especializado no metabolismo e equilíbrio hormonal.
+                Resultado real, seguro e que se mantém — sem milagres, com ciência.
               </p>
 
               <ul className="flex flex-col gap-2">
                 {[
-                  "Equipe multidisciplinar especializada",
-                  "Consultas presenciais e online",
-                  "Planos de tratamento individualizados",
+                  "Avaliação metabólica e hormonal completa",
+                  "Tratamento individualizado e seguro",
+                  "Acompanhamento até atingir seus resultados",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
                     <CheckCircle size={16} className="text-amber-500 flex-shrink-0" />
@@ -319,7 +319,8 @@ export default function Home() {
               name="Dra. Simara Marques"
               specialty="Médica"
               registration="CRM 247.230 · SP"
-              description="Especialista em endocrinologia, emagrecimento e saúde hormonal. Atendimento integrativo e humanizado, com foco em resultados duradouros."
+              description="Especializada em metabolismo, emagrecimento e saúde hormonal. Atendimento integrativo e humanizado, com foco em resultados duradouros."
+              waLink={WA_SIMARA}
             />
             <TeamCard
               photo={`${import.meta.env.BASE_URL}foto_philipi.jpg`}
@@ -328,6 +329,7 @@ export default function Home() {
               specialty="Médico"
               registration="CRM 223.765 · SP"
               description="Médico com abordagem integrativa e preventiva. Diagnóstico preciso e acompanhamento próximo para sua saúde geral e qualidade de vida."
+              waLink={WA_PHILIPI}
             />
             <TeamCard
               photo={`${import.meta.env.BASE_URL}foto_jessica.jpg`}
@@ -336,6 +338,7 @@ export default function Home() {
               specialty="Nutricionista"
               registration="CRN 51.674 SP"
               description="Nutricionista clínica com foco em reeducação alimentar, emagrecimento saudável e saúde metabólica. Planos alimentares personalizados para cada objetivo."
+              waLink={WA_JESSICA}
             />
           </div>
 

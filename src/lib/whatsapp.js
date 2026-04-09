@@ -1,2 +1,7 @@
-export const WHATSAPP_LINK =
-  "https://wa.me/5511970768886?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.";
+const BASE = "https://wa.me/5511970768886?text=";
+
+export const WHATSAPP_LINK = BASE + encodeURIComponent("Olá! Vim pelo site e gostaria de agendar uma consulta.");
+
+export const WA_SIMARA  = BASE + encodeURIComponent("Olá! Vim pelo site e gostaria de agendar uma consulta com a Dra. Simara.");
+export const WA_PHILIPI = BASE + encodeURIComponent("Olá! Vim pelo site e gostaria de agendar uma consulta com o Dr. Philipi.");
+export const WA_JESSICA = BASE + encodeURIComponent("Olá! Vim pelo site e gostaria de agendar uma consulta com a Dra. Jéssica.");
